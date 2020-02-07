@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BTM RealState {% block title%} {% endblock %}</title>
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'css/all.css'%}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+<!--Topbar-->
+{% include 'Partial Pages/_topbar.html'%}
+{% include 'Partial Pages/_navbar.html'%}
+{% block content%} {% endblock %}
+{% include 'Partial Pages/_footer.html'%}
+  <script src="{% static 'js/jquery-3.3.1.min.js'%} "></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js'%} "></script>
+  <script src="{% static 'js/main.js'%} "></script>
+</body>
+</html>
